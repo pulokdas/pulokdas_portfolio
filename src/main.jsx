@@ -15,7 +15,8 @@ const router = createBrowserRouter([
 ]);
 Aos.init({
    // Animation duration in milliseconds
-  once: false, // Whether animations should only happen once while scrolling down
+  once: false,
+  // Whether animations should only happen once while scrolling down
 });
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

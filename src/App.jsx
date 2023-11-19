@@ -10,6 +10,7 @@ const App = () => {
     <div className='  bg-[#1f2229] text-[#d8dee9]'>
       <Navbar/>
       <Banner/>
+      <About/>
      <Skills/>
      
     </div>
