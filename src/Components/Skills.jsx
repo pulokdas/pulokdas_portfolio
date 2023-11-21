@@ -112,11 +112,11 @@ const Skills = () => {
 
   
     return (
-      <div className=" ">
+      <div id='skills' className="pt-20 ">
         <h1 data-aos="fade-down"
          data-aos-duration="900" 
          className='text-5xl text-[#56b6c2] font-bold  my-10 text-center'>SKILLS I HAVE</h1>
-        <div  className="flex items-center justify-center  space-x-4">
+        <div  className="w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5  ">
           {skillsData.map((skill, index) => (
             <div
             data-aos="zoom-out-down"
@@ -128,7 +128,7 @@ const Skills = () => {
             
           ))}
         </div>
-        <div className='my-10 w-11/12 mx-auto grid grid-cols-3 gap-10'>
+        <div className='my-10 w-11/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
           {
             skillsData.map((skill, index) =>(
               <div data-aos="zoom-in-down"

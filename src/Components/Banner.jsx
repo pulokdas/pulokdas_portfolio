@@ -9,7 +9,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div id="banner" className="hero min-h-screen bg-[#1f2229]">
+    <div id="home" className="hero min-h-screen bg-[#1f2229]">
       <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around lg:gap-60">
         <div data-aos="fade-left" data-aos-duration="900" data-aos-once="false" className="avatar">
           <div className="w-60 h-60 md:w-96 md:h-96 rounded-full">

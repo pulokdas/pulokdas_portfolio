@@ -2,14 +2,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div data-aos="fade-up" data-aos-delay="200"
+    <div id="about" data-aos="fade-up" data-aos-delay="200"
     data-aos-duration="800" className="p-12  text-white">
-      <div className="w-11/12 mx-auto flex flex-col items-center">
+      <div className="w-11/12 py-20 mx-auto flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-4">About Me</h2>
         <div className="">
        
          
-          <div className=' flex items-center gap-10 space-y-3 text-justify '>
+          <div className=' flex flex-col lg:flex-row items-center gap-10 space-y-3 text-justify '>
             <div>
             <img src="https://i.ibb.co/fDRv9MF/1696202549725.jpg" className="max-w-sm rounded-lg shadow-2xl" />
             </div>

@@ -1,0 +1,110 @@
+[
+    {
+      "id": 1,
+      "title": "ByteBurst Productions",
+      "description": "A gaming event management company's website.",
+      "technologies": ["React", "Tailwind CSS", "Firebase"],
+      "image": "https://i.ibb.co/nMbvCQR/Bytes-Production.png",
+      "github": "https://github.com/pulokdas/ByteBurst-Productions",
+      "demo": "https://byteburst-production.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 2,
+      "title": "Donations",
+      "description": "Connect with friends and share updates on this social media application with real-time messaging.",
+      "technologies": ["React", "Tailwind CSS", "Firebase"],
+      "image": "https://i.ibb.co/jG8RHFr/Donation-Campain.png",
+      "github": "https://github.com/pulokdas/donation-campaign",
+      "demo": "https://donations-phassignment.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 3,
+      "title": "Buy Courses",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies": ["Javascript", "Tailwind CSS", "Html"],
+      "image": "https://i.ibb.co/HBHZtqz/Course-reg.png",
+      "github": "https://github.com/pulokdas/Buy-Course",
+      "demo": "https://buycourses.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 4,
+      "title": "Ph Tube",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies": ["Javascript", "Tailwind CSS", "Html"],
+      "image": "https://i.ibb.co/ZTP8jz4/Ph-Tube.png",
+      "github": "https://github.com/pulokdas/Ph-Tube",
+      "demo": "https://phtubebypulok.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 5,
+      "title": "Text Formatter",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies":["Javascript", "Tailwind CSS", "Html"],
+      "image": "https://i.ibb.co/Ns4LY76/Text-Formatter.png",
+      "github": "https://github.com/pulokdas/text-formatter",
+      "demo": "https://pulok-text-formatter.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 6,
+      "title": "Dine Discover",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies": ["React", "Tailwind CSS", "Firebase","Firebase","Express", "MongoDB"],
+      "image": "https://i.ibb.co/WKZwcx8/Dine-discover.png",
+      "github": "https://github.com/pulokdas/dine-discover",
+      "demo": "https://dine-discover-p.netlify.app/",
+      "status":"Coding"
+    },
+    {
+      "id": 7,
+      "title": "Gamers Hub",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies": ["React", "Tailwind CSS", "Firebase","Firebase","Express", "MongoDB"],
+      "image": "https://i.ibb.co/Fg5PZr2/Gamers-hub.png",
+      "github": "https://github.com/pulokdas/gamers-website",
+      "demo": "https://dine-discover-p.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 8,
+      "title": "Fruit burst",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies": ["React", "Tailwind CSS", "Firebase","Firebase","Express", "MongoDB"],
+      "image": "https://i.ibb.co/Yk86b3p/Fruit-Burst.png",
+      "github": "https://github.com/pulokdas/fruits-shop",
+      "demo": "https://dine-discover-p.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 9,
+      "title": "Flower Shop",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies": ["React", "Tailwind CSS", "Firebase","Firebase","Express", "MongoDB"],
+      "image": "https://i.ibb.co/5hGXjWm/Flower-Shop.png",
+      "github": "https://github.com/pulokdas/flowershop",
+      "demo": "https://dine-discover-p.netlify.app/",
+      "status":"complete"
+    },
+    {
+      "id": 10,
+      "title": "Summer-sale",
+      "description": "Organize your tasks efficiently with this task management system featuring user-friendly task boards.",
+      "technologies": ["React", "Tailwind CSS", "Firebase","Firebase","Express", "MongoDB"],
+      "image": "https://i.ibb.co/D7nwHTV/Summer-sale.png",
+      "github": "https://github.com/pulokdas/Summer-sale",
+      "demo": "https://summer-sale-bypulok.netlify.app/",
+      "status":"complete"
+    }
+  ]
+  
+
+
+
+
+
+
+

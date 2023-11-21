@@ -1,7 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-
+import { Link, animateScroll as scroll } from 'react-scroll';
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState('');
+  const sectionIds = ['home', 'about','skills', 'projects'];
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      
+      const active = sectionIds.find((sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const offset = section.offsetTop - 50; // Adjust the offset based on your design
+          const height = section.offsetHeight;
+          return scrollPosition >= offset && scrollPosition < offset + height;
+        }
+        return false;
+      });
+
+      setActiveSection(active || '');
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [sectionIds]);
   return (
     <div data-aos="none" className="navbar sticky top-0 bg-[#1f2229] z-50">
   <div className="navbar-start">
@@ -25,32 +53,19 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex  ">
     <ul className=" flex ">
-      <li className='mx-5'><NavLink
-  to="/"
-  className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-[#61dafb]" : ""
-  }
->
- HOME
-</NavLink></li>
-      <li className='mx-5'><NavLink
-  to="/ABOUT"
-  className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-[#61dafb]" : ""
-  }
->
-ABOUT
-</NavLink></li>
-      <li className='mx-5'><NavLink
-  to="/PROJECTS"
-  className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "text-[#61dafb]" : ""
-  }
->
- PROJECTS
-</NavLink></li>
-     
-      
+    {sectionIds.map((sectionId) => (
+            <li key={sectionId} className="mx-5 text-sm font-bold">
+              <Link
+                to={sectionId}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={`text-xl ${activeSection === sectionId ? 'text-[#61dafb]' : ''}`}
+              >
+                {sectionId.toUpperCase()}
+              </Link>
+            </li>
+          ))}
       
     </ul>
   </div>
