@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { Link, animateScroll as scroll } from 'react-scroll';
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('');
-  const sectionIds = ['home', 'about','skills', 'projects'];
+  const sectionIds = ['home', 'about','skills', 'projects', 'contact'];
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -54,7 +54,7 @@ const Navbar = () => {
   <div className="navbar-center hidden lg:flex  ">
     <ul className=" flex ">
     {sectionIds.map((sectionId) => (
-            <li key={sectionId} className="mx-5 text-sm font-bold">
+            <li key={sectionId} className="mx-5 cursor-pointer text-sm font-bold">
               <Link
                 to={sectionId}
                 spy={true}

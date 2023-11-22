@@ -13,7 +13,7 @@ const Banner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around lg:gap-60">
         <div data-aos="fade-left" data-aos-duration="900" data-aos-once="false" className="avatar">
           <div className="w-60 h-60 md:w-96 md:h-96 rounded-full">
-            <img src="https://i.ibb.co/fDRv9MF/1696202549725.jpg" alt="Avatar" />
+            <img src="https://i.ibb.co/Ypwpb3F/1696202549725-min.jpg" alt="Avatar" />
           </div>
         </div>
 

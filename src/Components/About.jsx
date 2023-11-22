@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <div id="about" data-aos="fade-up" data-aos-delay="200"
-    data-aos-duration="800" className="p-12  text-white">
+    data-aos-duration="800" className="p-12 w-screen text-white">
       <div className="w-11/12 py-20 mx-auto flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-4">About Me</h2>
         <div className="">
@@ -11,7 +11,7 @@ const About = () => {
          
           <div className=' flex flex-col lg:flex-row items-center gap-10 space-y-3 text-justify '>
             <div>
-            <img src="https://i.ibb.co/fDRv9MF/1696202549725.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+            <img src="https://i.ibb.co/FkpqRgV/1668425261610-min.jpg" className="max-w-sm rounded-lg shadow-2xl" />
             </div>
           <p className="text-xl ">
             Hey there! I'm Pulok Das, a passionate full-stack MERN web developer hailing from the picturesque landscapes of Bangladesh. My love for technology and the art of coding drives me to turn imaginative ideas into functional and elegant digital solutions.
@@ -31,8 +31,37 @@ Let's collaborate and breathe life into your digital vision! Whether you envisio
         </div>
        
       </div>
+      <div data-aos="fade-up" className='w-full '>
+      <h2 className="text-4xl text-center font-bold mb-4">Education</h2>
+     <div className='w-11/12 mx-auto'>
+     <div className='flex gap-10  '>
+     <div className='flex gap-4 ml-28 items-center '>
+       <div className='w-24  bg-[#56b6c2]'>
+<img src="https://i.ibb.co/QXkJGTF/moulvibazar-govt-college-logo.png" alt="" />
+       </div>
+       <div>
+       <h1 className=' text-2xl text-[#61dafb] '>Higher Secondary School Certificate</h1>
+        <h2 className=' text-xl'>Moulvibazar Govt. College, Moulvibazar, Bangladesh</h2>
+        <h3>April  2017 - August 2019</h3>
+       </div>
+      </div>
+      <div className='flex gap-4 items-center'>
+       <div className='w-24  bg-[#56b6c2]'>
+<img src="https://i.ibb.co/X4vDMHh/Leading-logo.png" alt="" />
+       </div>
+       <div>
+       <h1 className=' text-2xl text-[#61dafb] '>Bachelor of Science in Computer Science and Engineering</h1>
+        <h2 className=' text-xl'>Leading University,Sylhet,Bangladesh</h2>
+        <h3>September,  2019 - December,  2023</h3>
+       </div>
+      </div>
+     </div>
+     </div>
+     
+      </div>
     </div>
   );
 }
 
 export default About;
+

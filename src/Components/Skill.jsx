@@ -18,13 +18,7 @@ const Skill = (Skill) => {
        <h1 className=' text-3xl'>{name}</h1>
        
     </div>
-<div className='flex gap-2 items-center'>
-<progress style={{
-        backgroundColor: 'white',
-        color:bgColor,
-      }} className="progress progress-success " value={progress} max="100"></progress>
-      <h1 className=' text-sm  flex items-center justify-center rounded-full'>{progress}%</h1>
-</div>
+
     </div>
   )
 }

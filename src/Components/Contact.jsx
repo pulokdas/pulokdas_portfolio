@@ -5,9 +5,9 @@ import { FaLinkedin , FaGithub, FaFacebookSquare ,FaInstagramSquare
 import { Link } from 'react-router-dom';
 const Contact = () => {
   return (
-    <div className='flex justify-center items-center h-screen'>
+    <div id='contact' className='flex justify-center items-center h-screen'>
     <div className='flex  justify-around gap-10'>
-    <div class="relative flex flex-col rounded-xl bg-transparent bg-clip-border  text-center  shadow-none">
+    <div data-aos="fade-right" data-aos-duration="2000" class="relative flex flex-col rounded-xl bg-transparent bg-clip-border  text-center  shadow-none">
       <h4 class="text-[#61dafb] block font-sans text-2xl font-semibold leading-snug tracking-normal  antialiased">
        SEND ME EMAIL
       </h4>
@@ -60,10 +60,10 @@ const Contact = () => {
        
       </form>
     </div>
-    <div className='bg-[#61dafb] h-96 w-1'>
+    <div data-aos="fade-up" data-aos-duration="1000" className='bg-[#61dafb] h-96 w-1'>
 .
     </div>
-    <div className='h-96'>
+    <div data-aos="fade-left" data-aos-duration="2000" className='h-96'>
         <h1 className=' text-[#61dafb] text-center mb-8 block font-sans text-2xl'>CONNECT ON SOCIAL MEDIA</h1>
         <div className='flex flex-col gap-4'>
             <Link to='https://www.linkedin.com/in/pulok-das/' target='blank' className='btn btn-block mb-1   rounded  text-[#ffff]  border-[#0077B5] bg-[#0077B5]   hover:bg-[#61dafb] hover:text-[#282c34]'>
