@@ -8,6 +8,14 @@ const Banner = () => {
     AOS.refresh();
   }, []);
 
+  const handleDownloadCV = () => {
+    // Replace the URL with the actual path to your CV file
+    const cvUrl = 'https://drive.google.com/file/d/13rsb62q00Yi-8MdYTHRYwdhYsLNyVkRL/view?usp=drive_link';
+    
+    // Trigger download
+    window.open(cvUrl, '_blank');
+  };
+
   return (
     <div id="home" className="hero min-h-screen bg-[#1f2229]">
       <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around lg:gap-60">
@@ -43,6 +51,7 @@ const Banner = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
             data-aos-duration="800"
+            onClick={handleDownloadCV}
             className="mt-4 btn rounded bg-[#282c34] text-[#61dafb] border-[#61dafb] hover:bg-[#61dafb] hover:text-[#282c34]"
           >
             DOWNLOAD CV

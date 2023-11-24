@@ -3,11 +3,22 @@ import { NavLink } from 'react-router-dom'
 import { Link, animateScroll as scroll } from 'react-scroll';
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('');
-  const sectionIds = ['home', 'about','skills', 'projects', 'contact'];
+  const sectionIds = ['home', 'about','skills', 'projects'];
+ 
+  const handleContactScroll = () => {
+    const section = document.getElementById('contact');
+    if (section) {
+      const offset = section.offsetTop - 50;
+      scroll.scrollTo(offset, {
+        duration: 500,  // adjust the duration as needed
+        smooth: 'easeInOutQuart',  // you can adjust the smoothness
+      });
+    }
+  };
+ 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-
       
       const active = sectionIds.find((sectionId) => {
         const section = document.getElementById(sectionId);
@@ -70,7 +81,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn btn-sm  rounded bg-[#282c34]  text-[#61dafb]  border-[#61dafb]   hover:bg-[#61dafb] hover:text-[#282c34]">CONTACT ME</a>
+    <button onClick={handleContactScroll} className="btn btn-sm  rounded bg-[#282c34]  text-[#61dafb]  border-[#61dafb]   hover:bg-[#61dafb] hover:text-[#282c34]">CONTACT ME</button>
   </div>
 </div>
   )
