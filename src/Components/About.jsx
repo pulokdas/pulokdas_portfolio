@@ -11,9 +11,9 @@ const About = () => {
          
           <div className=' flex flex-col lg:flex-row items-center gap-10 space-y-3 text-justify '>
             <div>
-            <img src="https://i.ibb.co/FkpqRgV/1668425261610-min.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+            <img  src="https://i.ibb.co/FkpqRgV/1668425261610-min.jpg" className="md:max-w-sm rounded-lg shadow-2xl" />
             </div>
-          <p className="text-xl ">
+          <p className=" text-base lg:text-xl  md:px-0 ">
             Hey there! I'm Pulok Das, a passionate full-stack MERN web developer hailing from the picturesque landscapes of Bangladesh. My love for technology and the art of coding drives me to turn imaginative ideas into functional and elegant digital solutions.
 
 In my journey, I've honed my skills in crafting seamless and interactive web experiences. I find joy in the intricate process of designing user interfaces with React, bringing creativity to the forefront. Simultaneously, my expertise extends to the backend, where I wield the power of Node.js and MongoDB to build robust server-side applications.
@@ -34,8 +34,8 @@ Let's collaborate and breathe life into your digital vision! Whether you envisio
       <div data-aos="fade-up" className='w-full '>
       <h2 className="text-4xl text-center font-bold mb-4">Education</h2>
      <div className='w-11/12 mx-auto'>
-     <div className='flex gap-10  '>
-     <div className='flex gap-4 ml-28 items-center '>
+     <div className='flex flex-col lg:flex-row  gap-10  '>
+     <div className='flex flex-col md:flex-row gap-4 lg:ml-28 items-center '>
        <div className='w-24  bg-[#56b6c2]'>
 <img src="https://i.ibb.co/QXkJGTF/moulvibazar-govt-college-logo.png" alt="" />
        </div>
@@ -45,7 +45,7 @@ Let's collaborate and breathe life into your digital vision! Whether you envisio
         <h3>April  2017 - August 2019</h3>
        </div>
       </div>
-      <div className='flex gap-4 items-center'>
+      <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
        <div className='w-24  bg-[#56b6c2]'>
 <img src="https://i.ibb.co/X4vDMHh/Leading-logo.png" alt="" />
        </div>

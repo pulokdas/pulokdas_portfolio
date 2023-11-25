@@ -41,15 +41,19 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='flex justify-center items-center h-screen'>
-    <div className='flex  justify-around gap-10'>
-    <div data-aos="fade-right" data-aos-duration="2000" class="relative flex flex-col rounded-xl bg-transparent bg-clip-border  text-center  shadow-none">
+    <div id='contact' className='mt-20'>
+      <h1 class="text-white text-center mb-20 block font-sans text-4xl font-bold leading-snug tracking-normal  antialiased">
+       CONTACT 
+      </h1> 
+      <div  className='flex justify-center items-center '>
+    <div className='flex  flex-col lg:flex-row justify-around gap-10'>
+    <div data-aos="fade-down" data-aos-duration="2000" class="relative flex flex-col rounded-xl bg-transparent bg-clip-border  text-center  shadow-none">
       <h4 class="text-[#61dafb] block font-sans text-2xl font-semibold leading-snug tracking-normal  antialiased">
        SEND ME EMAIL
-      </h4>
+      </h4> 
      
       <form onSubmit={handleSubmit}  class="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
-        <div class="mb-4 flex flex-col gap-6">
+        <div class="mb-4 flex flex-col  gap-6">
           <div class="relative h-11 w-full min-w-[200px]">
             <input
              onChange={handleChange}
@@ -99,10 +103,10 @@ const Contact = () => {
        
       </form>
     </div>
-    <div data-aos="fade-up" data-aos-duration="1000" className='bg-[#61dafb] h-96 w-1'>
-.
+    <div data-aos="fade-up" data-aos-duration="1000" className=' divider lg:divider-horizontal   divider-info'>
+OR
     </div>
-    <div data-aos="fade-left" data-aos-duration="2000" className='h-96'>
+    <div data-aos="fade-down" data-aos-duration="2000" className='h-96'>
         <h1 className=' text-[#61dafb] text-center mb-8 block font-sans text-2xl'>CONNECT ON SOCIAL MEDIA</h1>
         <div className='flex flex-col gap-4'>
             <Link to='https://www.linkedin.com/in/pulok-das/' target='blank' className='btn btn-block mb-1   rounded  text-[#ffff]  border-[#0077B5] bg-[#0077B5]   hover:bg-[#61dafb] hover:text-[#282c34]'>
@@ -118,6 +122,7 @@ INSTAGRAM</button></Link>
     </div>
     </div>
   </div>
+    </div>
   )
 }
 

@@ -44,20 +44,24 @@ const Navbar = () => {
   return (
     <div data-aos="none" className="navbar sticky top-0 bg-[#1f2229] z-50">
   <div className="navbar-start">
-    <div className="dropdown">
+    <div className="dropdown relative  ">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+      <ul tabIndex={0} className=" flex absolute top-7 left-0 dropdown-content mt-3 z-[1] py-2 shadow bg-[#1f2229]     ">
+      {sectionIds.map((sectionId) => (
+            <li key={sectionId} className="mx-5 bg-[#1f2229] cursor-pointer text-xs ">
+              <Link
+                to={sectionId}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={` bg-[#1f2229] text-sm font-semibold ${activeSection === sectionId ? 'text-[#61dafb]' : ''}`}
+              >
+                {sectionId.toUpperCase()}
+              </Link>
+            </li>
+          ))}
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">Pulok DAS</a>
