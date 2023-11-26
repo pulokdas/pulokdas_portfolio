@@ -42,7 +42,7 @@ const ProjectCard = ({project}) => {
       <FaGithub />Github repo
       </Link>
      </div>
-      <Link className="btn btn-sm w-full mt-2  rounded bg-[#61dafb]  text-[#282c34]  border-[#61dafb]   hover:bg-[#282c34] hover:text-[#61dafb]" to='/' target="_blank">
+      <Link to={`/project/${id}`} className="btn btn-sm w-full mt-2  rounded bg-[#61dafb]  text-[#282c34]  border-[#61dafb]   hover:bg-[#282c34] hover:text-[#61dafb]" >
       View details
       </Link>
       

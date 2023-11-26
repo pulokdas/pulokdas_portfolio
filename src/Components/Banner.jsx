@@ -10,7 +10,7 @@ const Banner = () => {
 
   const handleDownloadCV = () => {
     // Replace the URL with the actual path to your CV file
-    const cvUrl = 'https://drive.google.com/file/d/13rsb62q00Yi-8MdYTHRYwdhYsLNyVkRL/view?usp=drive_link';
+    const cvUrl = 'https://drive.google.com/file/d/1IHcHR-o3hEL8COvCWD2uIN7HJyI_m32_/view?usp=sharing';
     
     // Trigger download
     window.open(cvUrl, '_blank');

@@ -7,11 +7,26 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Aos from 'aos';
+import Projectdetails from './Components/Projectdetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  {
+    path: "/project/:id",
+    element: <Projectdetails/>,
+    loader: async ({ params }) => {
+      // Fetch data based on the project ID (params.id)
+      const response = await fetch('/projects.json');
+      const data = await response.json();
+
+      // Find the project with the matching ID
+      const project = data.find((project) => project.id === parseInt(params.id, 10));
+
+      return project;
+    },
+  }
 ]);
 Aos.init({
    // Animation duration in milliseconds
